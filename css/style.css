@@ -1,0 +1,185 @@
+body {
+  font-family: Dosis;
+  color: #FFF;
+  box-sizing: border-box;
+  background-size: cover;
+  min-height: 100%;
+  max-width: 100%;
+  max-height: auto;
+  background: #f2f6f8;
+  background: -moz-linear-gradient(top, #f2f6f8 0%, #d8e1e7 50%, #b5c6d0 51%, #e0eff9 100%);
+  background: -webkit-linear-gradient(top, #f2f6f8 0%, #d8e1e7 50%, #b5c6d0 51%, #e0eff9 100%);
+  background: linear-gradient(to bottom, #f2f6f8 0%, #d8e1e7 50%, #b5c6d0 51%, #e0eff9 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9', GradientType=0);
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+
+}
+
+h1 {
+  color: #80ffaa;
+  font-size: 4em;
+  text-shadow: 4px 2px 4px rgba(100, 100, 100, 0.4);
+  text-align: center;
+}
+
+h1 span {
+  color: #ff8080;
+  text-shadow: 4px 2px 4px rgba(255, 0, 0, 0.4);
+}
+
+h2 {
+  color: #91b8d4;
+  text-align: center;
+  margin-top: -40px;
+  margin-bottom: 40px;
+}
+
+h2 a {
+  color: #ff8080;
+}
+
+
+/* Circle Timer */
+.circle-clock {
+  text-align: center;
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  border-radius: 50%;
+  border: 5px solid #80ffaa;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  cursor: pointer;
+  background: #ff8080;
+  margin-bottom: 30px;
+}
+
+.clock-time {
+  font-size: 3em;
+  text-align: center;
+}
+
+.status {
+  font-size: 1.5em;
+  margin-top: -40px;
+}
+
+
+/* Time Setters */
+
+.work-setter {
+  display: inline-block;
+  color: #FFF;
+  text-align: center;
+  font-size: 1.0em;
+  font-weight: 300;
+  width: 240px;
+  min-height: 100%;
+  max-width: 100%;
+  padding: 10px;
+  background: #91b8d4;
+  border: 5px solid #80ffaa;
+  border-radius: 10px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, .5);
+  margin-bottom: 30px;
+}
+.work-setter p {
+  font-size: 2em;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+.work-setter {
+  margin-left: 435px;
+}
+
+button {
+  transition: 0.2s;
+  color: #80ffaa;
+  margin: 2px;
+  padding: 2px;
+  border-radius: 5px;
+  background: #ff8080;
+  border: 2px solid #80ffaa;
+  font-size: 2em;
+  padding: 0px 10px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  line-height: 1.0;
+}
+#reset{
+  width: 100px;
+  height: 40px;
+}
+.work-time {
+  font-size: 2em;
+  padding: 0 10px 0 10px;
+  cursor: pointer;
+}
+.setters {
+  margin-bottom: 30px;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 315px) {
+  .title {
+    font-size: 3.2em;
+    line-height: 0.8;
+  }
+  
+  }
+
+@media screen and (max-width: 650px) {
+  .title {
+    line-height: 0.8;
+  }
+  .circle-clock {
+    width: 200px;
+    height: 200px;
+  }
+  .clock-time {
+    font-size: 2.6em;
+  }
+  .space {
+    float: center;
+  }
+  .setters {
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+  }
+  .work-setter {
+    margin: auto !important;
+    margin-bottom: 20px !important;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .circle-clock {
+    width: 200px;
+    height: 200px;
+  }
+  .work-setter {
+    font-size: 0.8em;
+    width: 200px;
+    height: 100px;
+    margin-top: 30px;
+  }
+  .work-setter p {
+    margin-top: -5px;
+    margin-bottom: 10px;
+  }
+  .work-setter {
+    margin-right: 50px;
+  }
+  button {
+    width: 40px;
+    height: 40px;
+  }
+}
